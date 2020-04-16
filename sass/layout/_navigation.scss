@@ -1,0 +1,36 @@
+@import 'grid';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/typography';
+
+header {
+   grid-area: header;
+}
+
+.nav-items {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   list-style: none;
+   height: auto;
+   a {
+      text-decoration: none;
+      color: $colorHeader;
+      margin-right: 1px;
+      font-size: smaller;
+   }
+   :nth-child(2) {
+      margin-left: 10px;
+   }
+   :nth-child(3) {
+      background-image: url('assets/icon.png');
+      @include icon;
+      cursor: pointer;
+      margin-left: 16px;
+   }
+   :nth-child(4) img {
+      width: 40px;
+      border-radius: 50%;
+      margin-left: 10px;
+   }
+}

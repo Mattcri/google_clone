@@ -14,22 +14,6 @@ body {
   height: 100vh;
 }
 
-body {
-  font-family: "Noto Sans", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: grid;
-  grid-template: 60px auto 100px/1fr 1fr 1fr 1fr;
-  grid-template-areas: "header header header header" "content content content content" "footer footer footer footer";
-  width: 96%;
-  margin: 0 auto;
-  height: 100vh;
-}
-
 header {
   grid-area: header;
 }

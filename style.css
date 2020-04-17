@@ -11,7 +11,6 @@ body {
   grid-template-areas: "header header header header" "content content content content" "access access access access" "footer footer footer footer";
   width: 96%;
   margin: 0 auto;
-  height: 100vh;
 }
 
 header {
@@ -80,6 +79,36 @@ header {
 }
 .main-content__input span, .main-content__input a {
   margin: 0 auto;
+}
+
+.quick-access {
+  grid-area: access;
+  grid-column: 2/4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.quick-access__page {
+  background: rgba(241, 243, 244, 0.6);
+  margin: 10px 1px;
+  width: 9rem;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quick-access__page p {
+  margin: 0;
+  position: relative;
+  bottom: 5px;
+}
+.quick-access__icon {
+  width: 70px;
+  background: #f1f3f4;
+  height: 45px;
+  border-radius: 60%;
+  margin: 15px auto;
 }
 
 /*# sourceMappingURL=style.css.map */

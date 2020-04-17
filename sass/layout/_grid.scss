@@ -10,10 +10,11 @@ body {
 
 .container {
    display: grid;
-   grid-template: 60px auto 100px / 1fr 1fr 1fr 1fr;
+   grid-template: 60px 1fr 1fr 100px / 1fr 1fr 1fr 1fr;
    grid-template-areas: 
       "header header header header"
       "content content content content"
+      "access access access access"
       "footer footer footer footer";
    width: 96%;
    margin: 0 auto;

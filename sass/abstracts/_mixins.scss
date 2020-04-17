@@ -4,3 +4,10 @@
    background-position: center;
    width: 25px;
 }
+
+@mixin input-p {
+   height: 2.5rem;
+   width: 86%;
+   outline: none;
+   border: none;
+}

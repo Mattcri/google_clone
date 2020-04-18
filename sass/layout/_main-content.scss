@@ -7,22 +7,28 @@
    grid-column: 2/4;
    grid-row: 2/3;
    align-self: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    &__logo {
-      text-align: center;
       h1 {
          font-size: 5rem;
          letter-spacing: 0.7rem;
          margin: 20px 12px;
-         color: blue;
+         color: $colorLogo;
       }
    }
    &__input {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 90%;
       border-radius: 100px;
       border: 1px solid $colorBorderInput;
+      &:hover {
+         box-shadow: 0 1px 6px 3px #20212447;
+         border-color: #dfe1e500;
+      }
       input {
          @include input-p;
       }

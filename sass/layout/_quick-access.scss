@@ -11,24 +11,45 @@
    justify-content: center;
    align-items: center;
    &__page {
-      background: opacity($iconGround, .60);
       margin: 10px 1px;
-      width: 9rem;
+      width: 10rem;
       height: 100px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      &:hover {
+         background: opacity($iconGround, .55);
+         border-radius: 10px;
+      }
       p {
          margin: 0;
          position: relative;
          bottom: 5px;
+         font-size: 0.7rem;
+         font-weight: bold;
       }
    }
    &__icon {
       width: 70px;
       background: $iconGround;
-      height: 45px;
+      height: 50px;
       border-radius: 60%;
       margin: 15px auto;
+   }
+}
+
+.wrap-img {
+   width: auto;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   img {
+      width: 25px;
+      height: 25px;
+   }
+   .img--xs {
+      width: 18px;
+      height: 14px;
    }
 }

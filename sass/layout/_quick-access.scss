@@ -21,6 +21,10 @@
          background: opacity($iconGround, .55);
          border-radius: 10px;
       }
+      .options {
+         width: 13px;
+         height: 15px;
+      }
       p {
          margin: 0;
          position: relative;
@@ -40,7 +44,7 @@
 
 .wrap-img {
    width: auto;
-   height: 50px;
+   height: 53px;
    display: flex;
    justify-content: center;
    align-items: center;

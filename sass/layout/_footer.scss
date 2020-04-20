@@ -1,4 +1,5 @@
 @import '../abstracts/mixins';
+@import '../abstracts/breakpoints';
 @import '../abstracts/variables';
 @import '../base/typography';
 
@@ -9,6 +10,10 @@
    padding: 10px 25px;
    font-size: 0.90rem;
    color: #5f6368;
+   border-top: 1px solid $bottom-b;
+   @include v-small {
+      grid-area: footer-m;
+   }
    &__country {
       padding: 0 0 10px;
       border-bottom: 1px solid $bottom-b;
@@ -21,11 +26,21 @@
 .footer--about {
    display: flex;
    justify-content: space-between;
+   @include v-small {
+      display: block;
+   }
    .footer--ul {
       display: flex;
       list-style: none;
       padding: 0;
       margin: 0;
+      a {
+         text-decoration: none;
+         color: inherit;
+      }
+      @include v-small {
+         display: table-cell;
+      }
    }
    .margin-r li {
       margin-right: 30px;

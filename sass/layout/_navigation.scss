@@ -1,9 +1,13 @@
 @import '../abstracts/variables';
+@import '../abstracts/breakpoints';
 @import '../abstracts/mixins';
 @import '../base/typography';
 
 header {
    grid-area: header;
+   @include v-small {
+      grid-area: header-m;
+   }
 }
 
 .nav-items {
